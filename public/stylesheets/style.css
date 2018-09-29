@@ -1,0 +1,56 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.navbar{
+	background: #5497d9;
+	margin-bottom: 0;
+}
+#font{
+	font-size: 22px;
+	color:white;
+}
+
+#logining{
+	margin-top: 10px;
+	width: 64px;
+	height: 30px;
+	line-height: 2px;
+	background: #8bb72f;
+	font-size: 16px;
+	color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.alert{
+	margin-top: 0;
+	height: 30px;
+	background: #f6f6f6;
+	border: none;
+	border-bottom: 1px solid #eae9e9;
+	margin-bottom: 0;
+}
+.leftBox{
+	width: 13%;
+	min-height: 600px;
+	background: #f3f3f3;
+}
+.list-group img{
+	width: 30px;
+	height: 30px;
+}
+.container{
+	margin-top: 30px;
+	width: 87%;
+	min-height: 600px;
+	border: 1px solid;
+	float: right;
+}
+.list-group-item{
+	background: #d6e9f5;
+}

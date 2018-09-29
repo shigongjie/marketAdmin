@@ -1,0 +1,52 @@
+body{
+	background: url(../images/login_bg.jpg) no-repeat;
+	background-size: 100% 1000px;
+	position: relative;
+}
+h3{
+	position: absolute;
+	top: 150px;
+	left: 42%;
+	color: white;
+}
+.loginForm{
+	width: 379px;
+	height: 276px;
+	background: url(../images/form-bg.png) -3px;
+	position: absolute;
+	top: 750px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#userForm{
+	margin-top: 80px;
+	/*width: 300px;*/
+	height: 100px;
+}
+#userForm p{
+	width: 50px;
+	height: 30px;
+	float: left;
+	overflow: hidden;
+	margin: 0 0;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+#userForm input{
+	width: 235px;
+	height: 30px;
+	margin-top: 10px;
+	float: left;
+	margin-left: 20px;
+}
+.btnatbn{
+	margin-left: 20%;
+}
+.btntologin{
+	margin-left: 10px;
+	background: #499bd4;
+	color: white;
+}
