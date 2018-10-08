@@ -46,6 +46,9 @@ h3{
 	margin-left: 20%;
 }
 .btntologin{
+	width: 60px;
+	height: 36px;
+	border: none;
 	margin-left: 10px;
 	background: #499bd4;
 	color: white;

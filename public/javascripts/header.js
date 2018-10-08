@@ -1,5 +1,6 @@
 function header(){
 	this.creatDom();
+	this.loginOn();
 }
 header.navtemplate=`<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -12,8 +13,8 @@ header.navtemplate=`<nav class="navbar navbar-default">
 		        <li data-toggle="modal" data-target="#loginmodal" id="loginbtn"><a href="/html/loginHtml.html" id="logining">登录</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right hidden welcomeuser">
-		        <li><a href="#"></a></li>
-		        <li><a href="#">注销</a></li>
+		        <li><a href="#" class="fonts"></a></li>
+		        <li><a href="#" class="fonts">注销</a></li>
 		      </ul>
 		    </div>
 		  </div>
@@ -35,6 +36,18 @@ $.extend(header.prototype,{
 	creatDom(){
 		$(header.navtemplate).appendTo("header");
 		$(header.body).appendTo("body");
+	},
+	loginOn(){
+		let user=sessionStorage.User;
+		
+		if(!user){
+			return;
+		}
+		else{
+			user=JSON.parse(user);
+			console.log(user);
+			$(".loginusers").addClass("hidden").next().removeClass("hidden").find("a:first").text("欢迎:"+user.username);
+		}
 	}
 })
 new header();
